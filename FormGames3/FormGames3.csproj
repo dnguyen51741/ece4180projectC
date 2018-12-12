@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D93B4AD8-0732-4C10-B2D3-B4DFD975A16E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FormGames3</RootNamespace>
+    <AssemblyName>FormGames3</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Activities.Core.Presentation" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="startScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="startScreen.Designer.cs">
+      <DependentUpon>startScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="help.Designer.cs">
+      <DependentUpon>help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="endScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="endScreen.Designer.cs">
+      <DependentUpon>endScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainMenu.Designer.cs">
+      <DependentUpon>mainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="startScreen.resx">
+      <DependentUpon>startScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="help.resx">
+      <DependentUpon>help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="endScreen.resx">
+      <DependentUpon>endScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainMenu.resx">
+      <DependentUpon>mainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\door-closed.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\door-open.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\platform.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\madjick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2ef286e85b00823.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tree.gif" />
+    <None Include="Resources\christmastiles_2 %281%29.png" />
+    <None Include="Resources\text-animation-9.7s-318x97px.gif" />
+    <Content Include="Resources\1543214269589854 %281%29.png" />
+    <None Include="Resources\1543214269589854 %281%291.png" />
+    <Content Include="Resources\1543214269589854 %282%29.png" />
+    <None Include="Resources\1543214269589854 %282%291.png" />
+    <Content Include="Resources\1543214269589854.png" />
+    <None Include="Resources\15432142695898541.png" />
+    <Content Include="Resources\bossDefeat.wav" />
+    <Content Include="Resources\CVmMpkiXIAA5H95.jpg" />
+    <None Include="Resources\CVmMpkiXIAA5H951.jpg" />
+    <Content Include="Resources\Frank_Sinatra_Have_Yourself_A_Merry_Little_Christmas_Lyrics-sHVIVNoIPVM.wav" />
+    <None Include="Resources\king.gif" />
+    <Content Include="Resources\New Piskel %281%29.gif" />
+    <None Include="Resources\New Piskel %281%291.gif" />
+    <Content Include="Resources\pure-css-snow-animation.gif" />
+    <None Include="Resources\pure-css-snow-animation1.gif" />
+    <Content Include="Resources\The_Christmas_Song_Chestnuts_Roasting_on_an_Open_Fire_-_Slow_Solo_Piano_Jazz-ZtBnp5YOO2o.wav" />
+    <Content Include="Resources\The_First_Noel_-_Bing_Crosby-XyuwLem8Ztk.wav" />
+    <None Include="Resources\vtvrSoL.jpg.png" />
+    <None Include="Resources\15.png" />
+    <None Include="Resources\16.png" />
+    <None Include="Resources\bullet.gif" />
+    <None Include="Resources\0q4PioA.gif" />
+    <None Include="Resources\candycane.gif" />
+    <None Include="Resources\4YLH.gif" />
+    <Content Include="Resources\collect.wav" />
+    <Content Include="Resources\doorclosed.png" />
+    <None Include="Resources\doorclosed1.png" />
+    <Content Include="Resources\giphy.gif" />
+    <None Include="Resources\imageedit_1_3837263550 %281%29.png" />
+    <Content Include="Resources\hit.wav" />
+    <Content Include="Resources\imageedit_1_3837263550 %282%29.png" />
+    <None Include="Resources\imageedit_1_3837263550 %282%291.png" />
+    <Content Include="Resources\jump.wav" />
+    <None Include="Resources\New Piskel.gif" />
+    <Content Include="Resources\level2-logo.gif" />
+    <None Include="Resources\level2-logo1.gif" />
+    <Content Include="Resources\open.wav" />
+    <Content Include="Resources\ornament.gif" />
+    <None Include="Resources\ornament1.gif" />
+    <Content Include="Resources\shootSFX.wav" />
+    <None Include="Resources\giphy1.gif" />
+    <Content Include="Resources\Jingle Bells %28Instrumental%29.wav" />
+    <None Include="Resources\level1-logo.gif" />
+    <Content Include="Resources\level1.gif" />
+    <None Include="Resources\level11.gif" />
+    <Content Include="Resources\Onett Theme Earthbound Music.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
